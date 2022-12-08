@@ -1,15 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML - Forms</title>
 </head>
+
 <body>
-    <p>Uma tag <code>form</code> para começar</p>
-    <p>Um label e um input aqui:</p>
-    <p>E um botão para terminar.</p>
+    <h2>Formularios</h2>
+
+    <form action="#">
+        <label for="nome">Nome:</label>
+        <input id="nome" type="text" name="nome" placeholder="Nome" required>
+        <br><br>
+        <label for="endereco">Endereco:</label>
+        <input type="text" name="endereco" id="endereco" placeholder="endereco" required>
+        <br><br>
+        <label for="ncasa">N-</label>
+        <input type="number" name="ncasa" id="ncasa" placeholder="numero da residencia" required>
+        <br><br>
+        <label for="data">Data:</label>
+        <input type="date" id="data" name="data">
+        <br><br>
+        <label>
+            Fem <input type="radio" name="gen" value="fem">
+            Mas <input type="radio" name="gen" value="masc">
+            Nao Binario <input type="radio" name="gen" value="nb">
+        </label>
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="digite seu email" required>
+        <br><br>
+        <textarea type="text" name="areatexto" id="areatexto" cols="30" rows="5" placeholder="Digite aqui sua mensagem"></textarea>
+        <br><br>
+        <button type="submit">Enviar</button>
+
+    </form>
+
+    <h3><a href="./tags-especiais.html">Volta para a pagina principal</a></h3>
 
 </body>
+
 </html>
